@@ -2,10 +2,12 @@
 Symfony5 PHP8 DOCKER ESK | Cluster | POD
 
 Step 0: 
+
     a. Setup Application 
     b. Run application 
 
 Step 1: 
+
     a. Build image ( . [dot] is  important )
     b. Add tag to the image
     c. Push image to Docker Hub
