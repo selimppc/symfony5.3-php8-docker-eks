@@ -4,7 +4,7 @@ ARG FPM_ALPINE_VERSION=3.14
 ARG TIMEZONE=UTC
 
 # "php" stage
-FROM php:${PHP_VERSION}-fpm-alpine${FPM_ALPINE_VERSION} AS symfony_php
+FROM php:${PHP_VERSION}-fpm-alpine${FPM_ALPINE_VERSION} AS symfony5_php8
 MAINTAINER Selim Reza <selimppc@gmail.com>
 
 # persistent / runtime deps
