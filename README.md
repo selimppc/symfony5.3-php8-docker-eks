@@ -32,7 +32,9 @@
 
 # Step 2: 
     a. Create IAM from AWS account.
+        -- for more info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
     b. Allow permission for EKS policies.
+        -- https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html
     c. Get and Store credentials.
 
 #### AWS Configure
@@ -46,6 +48,7 @@
 
 # Step 3:  Create Cluster  using `eksctl`
     a. Install `eksctl` according to OS
+        -- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
     b. Check `eksctl` version or status
     c. To create cluster follow the below format:
 
