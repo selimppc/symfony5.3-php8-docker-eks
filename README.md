@@ -35,6 +35,14 @@ Symfony5 PHP8 DOCKER ESK | Cluster | POD
     b. Allow permission for EKS policies.
     c. Get and Store credentials.
 
+#### AWS Configure
+    Update AWS config:
+    $ aws configure
+
+    OR check file:
+    $ vi ~/.aws/credentials
+    $ vi ~/.aws/config
+
 
 # Step 3:  Create Cluster  using `eksctl`
     a. Install `eksctl` according to OS
@@ -45,10 +53,4 @@ Symfony5 PHP8 DOCKER ESK | Cluster | POD
 
 
 
-## AWS Configure
-    Update AWS config:
-    $ aws configure
 
-    OR check file:
-    $ vi ~/.aws/credentials
-    $ vi ~/.aws/config
