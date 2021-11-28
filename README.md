@@ -3,7 +3,7 @@
 
 # Step 0: 
 
-    a. Setup Application 
+    A. Setup Application 
     b. Run application 
 
 # Step 1: 
@@ -31,11 +31,17 @@
     $  docker push <image>:<tag>
 
 # Step 2: 
-    a. Create IAM from AWS account.
+    A. Create IAM from AWS account.
+
         Reference: for more info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
-    b. Allow permission for EKS policies.
+
+    B. Allow permission for EKS policies.
+
         Reference: https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html
-    c. Get and Store credentials.
+
+    C. Get and Store credentials.
+
+    see the below configuation:
 
 #### AWS Configure
     Update AWS config:
@@ -47,15 +53,24 @@
 
 
 # Step 3:  Create Cluster  using `eksctl`
-    a. Install `eksctl` according to OS
-        Reference: https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
-    b. Check `eksctl` version or status
-        Reference: https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
-    c. To create cluster follow the below format:
-        
+#### A. Install `eksctl` according to OS
+
+    $ brew install eksctl
+
+###### Reference: https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
+
+#### B. Check `eksctl` version or status
+
+    $ eksctl version
+
+###### Reference: https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
+
+#### C. To create cluster follow the below format:
+    
+    $ eksctl create .....
 
 
-        Reference: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
+###### Reference: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 
 # Step 4: Apply the deployment YAML file using `kubectl`
 
