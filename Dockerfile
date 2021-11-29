@@ -109,7 +109,7 @@ WORKDIR /app
 COPY . /app
 
 # RUN composer config "platform.ext-mongo" "1.6.16" && composer require alcaeus/mongo-php-adapter
-FROM symfony_php as symfony_php_debug
+FROM symfony5_php8 as symfony_php_debug
 
 ARG XDEBUG_VERSION=3.0.4
 RUN set -eux; \
